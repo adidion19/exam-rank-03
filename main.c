@@ -6,7 +6,7 @@
 /*   By: adidion <adidion@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 16:15:30 by adidion           #+#    #+#             */
-/*   Updated: 2022/01/06 17:50:31 by adidion          ###   ########.fr       */
+/*   Updated: 2022/01/07 10:42:59 by adidion          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,12 +81,12 @@ int main(int ac, char **av)
 			{
 				if (circle == 'c')
 				{
-					if (radius >= sqrt((j - x) * (j - x) + (i - y) * (i - y)) && radius - 1.0000 < sqrt((j - x) * (j - x) + (i - y) * (i - y)))
+					if (radius >= sqrtf((j - x) * (j - x) + (i - y) * (i - y)) && radius - 1 < sqrtf((j - x) * (j - x) + (i - y) * (i - y)))
 						tab[i][j] = c;;
 				}
 				if (circle == 'C')
 				{
-					if (radius >= sqrt((j - x) * (j - x) + (i - y) * (i - y)))
+					if (radius >= sqrtf((j - x) * (j - x) + (i - y) * (i - y)))
 						tab[i][j] = c;
 				}
 			}
